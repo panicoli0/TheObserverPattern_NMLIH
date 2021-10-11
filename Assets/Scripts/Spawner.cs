@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
+
+    public GameObject bateryAmmoPrefab;
+    public GameObject medPrefab;
+    
     // Start is called before the first frame update
     void Start()
     {

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class Plant : MonoBehaviour
 {
     [SerializeField] private PlantData info;
-
+    [SerializeField] private int damage;
     private SetPlantInfo spi;
 
     private void Start()
@@ -27,8 +27,11 @@ public class Plant : MonoBehaviour
         if (other.gameObject.CompareTag("Player") && info.Threat == PlantData.THREAT.High)
         {
             // We can call it like that because dead is a static variable
-            PlayerController.dead = true;
-            FindObjectOfType<PlayerHealth>().PlayerHP = 0;
+            FindObjectOfType<PlayerHealth>().PlayerHP -= damage;
+            if (FindObjectOfType<PlayerHealth>().PlayerHP <= 0)
+            {
+                PlayerController.dead = true;
+            }
         }
     }
 }

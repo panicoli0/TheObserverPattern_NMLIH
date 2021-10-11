@@ -94,6 +94,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   info: {fileID: 11400000, guid: c51af1e267f4b7a45a97f14608a8c675, type: 2}
+  damage: 50
 --- !u!65 &-3642402253273435607
 BoxCollider:
   m_ObjectHideFlags: 0
