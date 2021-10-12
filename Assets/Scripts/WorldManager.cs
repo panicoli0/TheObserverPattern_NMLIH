@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class WorldManager : MonoBehaviour
 {
-    private const int Z_ORIGIN_POSITION = -27;
-    private const int X_ORIGIN_POSITION = -92;
-
     public GameObject[] trees;
     public Terrain terrain;
     public Transform plantsContainer;
