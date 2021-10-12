@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9221806708812337774}
   - component: {fileID: 779014726245114604}
   - component: {fileID: 1555168383912234291}
+  - component: {fileID: -350633801660318918}
   m_Layer: 0
   m_Name: BatteryPickup
   m_TagString: Untagged
@@ -95,3 +96,17 @@ CapsuleCollider:
   m_Height: 0.14378679
   m_Direction: 1
   m_Center: {x: 0, y: 1.134614e-11, z: -0.0021238325}
+--- !u!114 &-350633801660318918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8182133624888916734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a21ac54245e87446b6a0014b0facde5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightAngle: 90
+  lightIntensity: 15
